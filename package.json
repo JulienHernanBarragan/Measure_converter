@@ -1,0 +1,19 @@
+{
+  "name": "Measure_converter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Conversion d'unités métrique et impérial",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "",
+    "start": "node index.js"
+  },
+  "author": "Hernandez Julien, Laurent Perez, Maxime Neurer",
+  "license": "JLM",
+  "dependencies": {
+    
+  }
+}
