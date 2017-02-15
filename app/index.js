@@ -20,7 +20,6 @@ var server = http.createServer(function (requete, resultat) {
     let miles = page.indexOf('mi');
 
     if ((km >= 0 || m >= 0 || cm >= 0) && miles < 0) {
-        console.log('refrre');
         data = Measure_converter.unitsMetricToImperial(page);
     } else if (miles >= 0 || yard >= 0 || foot >= 0 || inch >= 0) {
         data = Measure_converter.unitsImperialToMetric(page);
