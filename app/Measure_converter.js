@@ -96,9 +96,10 @@ exports.unitsImperialToMetric = function(data){
 		unitsImperial = unitsImperial.split(',');
 
     let unitsImperialLength = unitsImperial.length;
-
+		console.log(unitsImperialLength);
     if (unitsImperialLength == 4) {
         resultInInch = (valuesUnits[0]*63360)+(valuesUnits[1]*36)+(valuesUnits[2]*12)+parseInt(valuesUnits[3]);
+        console.log('rtgzref');
     } else if (unitsImperialLength == 3) {
         switch(unitsImperial[0]) {
             case 'mi':
@@ -194,7 +195,7 @@ exports.unitsImperialToMetric = function(data){
 
 	// Maintenant que nous avons le résultat en Inch on va leconvertir en cm.
 	let resultInCm = parseInt(resultInInch*2.54);
-
+	console.log(resultInCm);
 	// Convertir le resultat sous la forme de ??km??m??cm si besoin.
     let km = parseInt(resultInCm/100000);
     	resultInCm = resultInCm -(km*100000);
