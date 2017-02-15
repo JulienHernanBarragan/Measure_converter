@@ -10,13 +10,13 @@ var server = http.createServer(function (requete, resultat) {
   var data;
   resultat.writeHead(200,{"Content-Type": "text/plain; charset=UTF-8"});
    
-	// See if distance is Metrics or Imperial
+	// See if the distances are Metrics or Imperial
     let km = page.indexOf('km');
     let m = page.indexOf('m');
     let cm = page.indexOf('cm');
     let inch = page.indexOf('in');
     let foot = page.indexOf('ft');
-    let yard = page.indexOf('ya');
+    let yard = page.indexOf('yd');
     let miles = page.indexOf('mi');
 
     console.log(km);
@@ -27,7 +27,7 @@ var server = http.createServer(function (requete, resultat) {
     } else {
         data = 'Erreur de distance !!!';
     }
-    
+
   resultat.end(data);
 });
 
