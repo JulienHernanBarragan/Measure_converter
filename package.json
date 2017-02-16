@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Hernandez Julien, Laurent Perez, Maxime Neurer",
+  "author": "Hernandez Julien, Laurent Perez, Maxime Neuder",
   "license": "JLM",
   "dependencies": {
     
