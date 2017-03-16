@@ -1,4 +1,4 @@
-Tests Unitaires concernant la version 0.1.0 :
+Tests concernant la version 0.1.0 :
 
 1. De unités impérial à metrique.
 	
@@ -40,4 +40,4 @@ A la suite de ces tests nous avons rémarquer plusieurs anomalies à corriger po
 Cependant les tests réalisées sans erreur de frappe de la part de l'utilisateur sont positifs.
 
 Bilan : L'application fonctionne pour la convertion des unités métriques et impériales, mais il faut prévoir des contrôles en cas d'erreur de frappe de l'utilisateur et les lui 
-	    indiquer pour qu'il n'y est pas d'imcomprehension.
+	    indiquer pour qu'il n'y est pas d'imcomprehension. De plus, nous allons installer Mocha pour réaliser des tests unitaires.
