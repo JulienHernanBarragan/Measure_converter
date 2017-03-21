@@ -2,9 +2,11 @@
 exports.unitsMetricToImperial = function(data){
     let resultInCm = '';
 
+    // On enlève le caractére / de notre chaine de caractère
     let unitsArray = data.split('/');
     let	units = unitsArray[1];
 
+    //On divise notre chaine de caractère en deux tableau (Un concernant les valeurs, le second concernant les unités)
     let valuesUnits = units.match(/\d+/g).join(',');
     	valuesUnits = valuesUnits.split(',');
     let unitsMetrics = units.match(/\D+/g).join(',');
@@ -12,6 +14,7 @@ exports.unitsMetricToImperial = function(data){
 
     let unitsMetricsLength = unitsMetrics.length;
 
+    // Calcul de la distance métrique en cm selon sa longueur
     if (unitsMetricsLength == 3 && unitsMetrics[0] == "km" && unitsMetrics[1] == "m" && unitsMetrics[2] == "cm") {
         resultInCm = (valuesUnits[0]*100000)+(valuesUnits[1]*100)+parseInt(valuesUnits[2]);
     }  else if (unitsMetricsLength == 2) {
@@ -62,6 +65,7 @@ exports.unitsMetricToImperial = function(data){
         resultInCm = 'Erreur de mesure !!!';
     }
 
+    // Si on n'a pas de message d'erreur alors
     if (typeof(resultInCm) != 'string') {
 
         // Maintenant que nous avons le résultat en cm on va le convertir en inch.
@@ -100,9 +104,11 @@ exports.unitsMetricToImperial = function(data){
 exports.unitsImperialToMetric = function(data){
     let resultInInch = '';
 
+    // On enlève le caractére / de notre chaine de caractère
     let unitsArray = data.split('/');
     let	units = unitsArray[1];
 
+    //On divise notre chaine de caractère en deux tableau (Un concernant les valeurs, l'autre concernant les unités)
     let valuesUnits = units.match(/\d+/g).join(',');
     	valuesUnits = valuesUnits.split(',');
 	let unitsImperial = units.match(/\D+/g).join(',');
@@ -110,6 +116,7 @@ exports.unitsImperialToMetric = function(data){
 
     let unitsImperialLength = unitsImperial.length;
 
+    // Calcul de la distance impérial en inch selon sa longueur
     if (unitsImperialLength == 4 && unitsImperial[0] == "mi" && unitsImperial[1] == "yd" && unitsImperial[2] == "ft" && unitsImperial[3] == "in") {
         resultInInch = (valuesUnits[0]*63360)+(valuesUnits[1]*36)+(valuesUnits[2]*12)+parseInt(valuesUnits[3]);
     } else if (unitsImperialLength == 3) {
@@ -222,8 +229,10 @@ exports.unitsImperialToMetric = function(data){
 		resultInInch = 'Erreur de mesure !!!';
 	}
 
+    // Si on n'a pas de message d'erreur alors
     if (typeof(resultInInch) != 'string') {
-        // Maintenant que nous avons le résultat en Inch on va leconvertir en cm.
+
+        // Maintenant que nous avons le résultat en Inch on va le convertir en cm.
         let resultInCm = parseInt(resultInInch*2.54);
         console.log(resultInCm);
         // Convertir le resultat sous la forme de ??km??m??cm si besoin.
