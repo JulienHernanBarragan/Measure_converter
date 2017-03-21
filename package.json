@@ -4,15 +4,13 @@
   "private": true,
   "description": "Conversion d'unités métrique et impérial",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node_modules/mocha --reporter spec"
   },
   "author": "Hernandez Julien, Laurent Perez, Maxime Neurer",
   "license": "JLM",
   "dependencies": {
-    
+    "mocha": "^3.2.0"
   }
 }

@@ -24,7 +24,7 @@ var server = http.createServer(function (requete, resultat) {
     } else if (miles >= 0 || yard >= 0 || foot >= 0 || inch >= 0) {
         data = Measure_converter.unitsImperialToMetric(page);
     } else {
-        data = 'Erreur de distance !!!';
+        data = 'Erreur de mesure !!! Veuillez retaper votre distance';
     }
 
   resultat.end(data);

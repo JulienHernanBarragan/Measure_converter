@@ -35,9 +35,8 @@ A la suite de ces tests nous avons rémarquer plusieurs anomalies à corriger po
 - Pour la plupart des Tests d'erreur aucun message n'apparait on a un resultat incomprehensible : Il faut donc faire plus de contrôle sur les unités de mesures.
   le code deviendra beaucoup plus long mais l'utilisateur comprendra directement le problème.
 - Adaptés mieux les messages d'erreurs pour savoir ce qu'il concerne (les messages d'erreurs étant identiques, cela rend la compréhension du problèmes plus difficile).
-- Réaliser un document concernant les messages d'erreurs renvoyer avec leurs explicatifs.
 
 Cependant les tests réalisées sans erreur de frappe de la part de l'utilisateur sont positifs.
 
 Bilan : L'application fonctionne pour la convertion des unités métriques, mais il faut prévoir des contrôles en cas d'erreur de frappe de l'utilisateur et les lui 
-	    indiquer pour qu'il n'y est pas d'imcomprehension.
+	    indiquer pour qu'il n'y est pas d'imcomprehension. De plus, nous allons utiliser mocha pour réaliser des tests unitaires.
