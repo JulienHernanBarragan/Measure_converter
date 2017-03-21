@@ -56,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Measure_converter.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Measure_converter.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Measure_converter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="568">
@@ -64,6 +64,16 @@
               <folding>
                 <element signature="e#120#3354#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Résumé_test" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/Résumé_test">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,8 +102,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/app/index.js" />
-        <option value="$PROJECT_DIR$/test/Résumé_test" />
         <option value="$PROJECT_DIR$/app/Measure_converter.js" />
+        <option value="$PROJECT_DIR$/test/Résumé_test" />
       </list>
     </option>
   </component>
@@ -262,12 +272,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487097202526</updated>
       <workItem from="1487097204423" duration="13282000" />
-      <workItem from="1490121405599" duration="3851000" />
+      <workItem from="1490121405599" duration="4069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17133000" />
+    <option name="totallyTimeSpent" value="17351000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,14 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Résumé_test">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="41" column="129" lean-forward="false" selection-start-line="41" selection-start-column="129" selection-end-line="41" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Measure_converter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
@@ -394,6 +396,14 @@
           <folding>
             <element signature="e#120#3354#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Résumé_test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
