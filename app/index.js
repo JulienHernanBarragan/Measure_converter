@@ -5,10 +5,9 @@ var url = require('url') ;
 var Measure_converter = require('./Measure_converter') ;
 
 var server = http.createServer(function (requete, resultat) {
-  var page = url.parse(requete.url).pathname ;
-  var sortie ;
-  var data;
-  resultat.writeHead(200,{"Content-Type": "text/plain; charset=UTF-8"});
+    var page = url.parse(requete.url).pathname ;
+    var data;
+    resultat.writeHead(200,{"Content-Type": "text/plain; charset=UTF-8"});
    
 	// See if the distances are Metrics or Imperial
     let km = page.indexOf('km');
@@ -27,7 +26,7 @@ var server = http.createServer(function (requete, resultat) {
         data = 'Erreur de mesure !!! Veuillez retaper votre distance';
     }
 
-  resultat.end(data);
+    resultat.end(data);
 });
 
 server.listen(8888) ;
